@@ -12,6 +12,7 @@
 function createMovieView(config) {
     var view = createTemplateView(config);
 
+    // additional rendering for prices, format labels and ID bindings.
     view.afterRender = function(clonedTemplate){
         //add alt attr to pic
         clonedTemplate.find('.pic').attr('alt', 'Poster for movie ' + this.model.title);
